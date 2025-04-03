@@ -1,0 +1,7 @@
+﻿  Bank On C++ Console.cpp
+D:\Mohamed\Projects\C++\Bank On C++ Console\Bank On C++ Console\Bank On C++ Console.cpp(171,40): warning C4018: '>=': signed/unsigned mismatch
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 316 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Bank On C++ Console.vcxproj -> D:\Mohamed\Projects\C++\Bank On C++ Console\Release\Bank On C++ Console.exe
