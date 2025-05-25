@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|solutionrelative:Bank On C\u002B\u002B Console\\client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|solutionrelative:Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C866DFC-3B33-4A8B-8ECB-C1D43B13F75F}|ATM\\ATM.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\ATM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1C866DFC-3B33-4A8B-8ECB-C1D43B13F75F}|ATM\\ATM.vcxproj|solutionrelative:ATM\\ATM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C866DFC-3B33-4A8B-8ECB-C1D43B13F75F}|ATM\\ATM.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1C866DFC-3B33-4A8B-8ECB-C1D43B13F75F}|ATM\\ATM.vcxproj|solutionrelative:ATM\\client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\myTools.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|solutionrelative:Bank On C\u002B\u002B Console\\myTools.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\user.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FFC4CA3-AF0D-4E65-B17E-BF6B47BB0B57}|Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.vcxproj|solutionrelative:Bank On C\u002B\u002B Console\\user.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -39,15 +55,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "client.h",
+              "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\client.h",
+              "RelativeDocumentMoniker": "Bank On C\u002B\u002B Console\\client.h",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\client.h",
+              "RelativeToolTip": "Bank On C\u002B\u002B Console\\client.h",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAI8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T07:03:07.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "client.h",
+              "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\client.h",
+              "RelativeDocumentMoniker": "ATM\\client.h",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\client.h",
+              "RelativeToolTip": "ATM\\client.h",
+              "ViewState": "AgIAAEUAAAAAAAAAAAA5wFQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T06:07:35.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "myTools.h",
+              "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\myTools.h",
+              "RelativeDocumentMoniker": "Bank On C\u002B\u002B Console\\myTools.h",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\myTools.h",
+              "RelativeToolTip": "Bank On C\u002B\u002B Console\\myTools.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T06:01:37.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ATM.cpp",
+              "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\ATM.cpp",
+              "RelativeDocumentMoniker": "ATM\\ATM.cpp",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\ATM\\ATM.cpp",
+              "RelativeToolTip": "ATM\\ATM.cpp",
+              "ViewState": "AgIAAB0AAAAAAAAAAABAwC8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-09T04:46:17.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "user.h",
+              "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\user.h",
+              "RelativeDocumentMoniker": "Bank On C\u002B\u002B Console\\user.h",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\user.h",
+              "RelativeToolTip": "Bank On C\u002B\u002B Console\\user.h",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAzwI0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-25T04:53:54.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Bank On C\u002B\u002B Console.cpp",
               "DocumentMoniker": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp",
               "RelativeDocumentMoniker": "Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp",
-              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp*",
-              "RelativeToolTip": "Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp*",
-              "ViewState": "AgIAAFcBAAAAAAAAAAAYwFsBAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\Mohamed\\Projects\\C\u002B\u002B\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp",
+              "RelativeToolTip": "Bank On C\u002B\u002B Console\\Bank On C\u002B\u002B Console.cpp",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAzwKgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-24T06:23:33.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T06:23:33.41Z"
             }
           ]
         }
