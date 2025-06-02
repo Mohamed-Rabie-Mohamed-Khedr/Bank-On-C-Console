@@ -10,10 +10,10 @@ struct client
 private:
 	short age;
 	unsigned int money;
-	std::string name, path, phone, id;
+	std::string name, phone, id;
 	bool readData()
 	{
-		std::fstream file(path, std::ios::in);
+		std::fstream file("clients.txt", std::ios::in);
 		std::string line;
 		std::cout << "Enter id Client: ";
 		std::cin >> id;
@@ -36,20 +36,24 @@ private:
 	return true;
 	}
 public:
-	client(std::string p)
+	client()
 	{
-		path = p;
+		age = 0;
+		money = 0;
+		name = "";
+		phone = "";
+		id = "";
 	}
 	std::string getInfo()
 	{
-		return id + ",/," + name + ",/," + std::to_string(money) + ",/," + std::to_string(age) + ",/," + phone;
+		return encrypt(id + ",/," + name + ",/," + std::to_string(money) + ",/," + std::to_string(age) + ",/," + phone);
 	}
-	bool addClient()
+	static bool addClient()
 	{
-		std::fstream file(path, std::ios::out | std::ios::app);
-		client p(path);
+		std::fstream file("clients.txt", std::ios::out | std::ios::app);
+		client p;
 		bool added = p.readData();
-		if (added) file << p.getInfo() + "\n";
+		if (added) file << p.getInfo() << "\n";
 		file.close();
 		return added;
 	}
@@ -57,15 +61,16 @@ public:
 	{
 		return "ID: " + id + "\nName: " + name + "\nMoney: " + std::to_string(money) + "\nAge: " + std::to_string(age) + "\nPhone: " + phone;
 	}
-	std::vector<client> getClientsFromFile()
+	static std::vector<client> getClientsFromFile()
 	{
 		std::vector<client> all;
-		std::fstream file(path, std::ios::in);
+		std::fstream file("clients.txt", std::ios::in);
 		std::string line;
 		size_t pos = 0;
 		while (getline(file, line))
 		{
-			client p(path);
+			line = decrypt(line);
+			client p;
 			pos = line.find(",/,");
 			p.id = line.substr(0, pos);
 			line.erase(0, pos + 3);
@@ -89,7 +94,7 @@ public:
 		file.close();
 		return all;
 	}
-	std::string findClient(std::string id)
+	static std::string findClient(std::string id)
 	{
 		std::vector<client> all = getClientsFromFile();
 		for (size_t i = 0; i < all.size(); ++i)
@@ -98,11 +103,23 @@ public:
 		}
 		return "";
 	}
-	bool deleteClient(std::string id)
+	static void findClient(std::string id, client& c)
+	{
+		std::vector<client> all = getClientsFromFile();
+		for (size_t i = 0; i < all.size(); ++i)
+		{
+			if (all[i].id == id)
+			{
+				c = all[i];
+				return;
+			}
+		}
+	}
+	static bool deleteClient(std::string id)
 	{
 		bool isDeleted = false;
 		std::vector<client> all = getClientsFromFile();
-		std::fstream file(path, std::ios::out);
+		std::fstream file("clients.txt", std::ios::out);
 		for (size_t i = 0; i < all.size(); ++i)
 		{
 			if (all[i].id != id) file << all[i].getInfo() + "\n";
@@ -111,16 +128,16 @@ public:
 		file.close();
 		return isDeleted;
 	}
-	bool updateClient(std::string id)
+	static bool updateClient(std::string id)
 	{
 		bool isUpdated = false;
 		std::vector<client> all = getClientsFromFile();
-		std::fstream file(path, std::ios::out);
+		std::fstream file("clients.txt", std::ios::out);
 		for (size_t i = 0; i < all.size(); ++i)
 		{
 			if (all[i].id == id)
 			{
-				client p(path);
+				client p;
 				p.readData();
 				all[i] = p;
 				isUpdated = true;
@@ -130,40 +147,42 @@ public:
 		file.close();
 		return isUpdated;
 	}
-	bool withdraw(std::string id, int amount)
+	bool withdraw(int amount)
 	{
 		bool isWithdrawed = false;
-		client p(path);
-		std::vector<client> all = p.getClientsFromFile();
-		std::fstream file(path, std::ios::out);
+		std::vector<client> all = client::getClientsFromFile();
+		std::fstream file("clients.txt", std::ios::out);
 		for (size_t i = 0; i < all.size(); ++i)
 		{
 			if (all[i].id == id && all[i].money >= amount)
 			{
-				all[i].money -= amount;
+				money -= amount;
+				file << getInfo() + "\n";
 				isWithdrawed = true;
 			}
-			file << all[i].getInfo() + "\n";
+			else file << all[i].getInfo() + "\n";
 		}
 		file.close();
 		return isWithdrawed;
 	}
-	bool deposit(std::string id, int amount)
+	bool deposit(int amount)
 	{
 		bool isDeposited = false;
-		client p(path);
-		std::vector<client> all = p.getClientsFromFile();
-		std::fstream file(path, std::ios::out);
+		std::vector<client> all = client::getClientsFromFile();
+		std::fstream file("clients.txt", std::ios::out);
 		for (size_t i = 0; i < all.size(); ++i)
 		{
 			if (all[i].id == id)
 			{
-				all[i].money += amount;
+				money += amount;
+				file << getInfo() + "\n";
 				isDeposited = true;
 			}
-			file << all[i].getInfo() + "\n";
+			else file << all[i].getInfo() + "\n";
 		}
 		file.close();
 		return isDeposited;
 	}
+	std::string getName() { return name; }
+	unsigned int getMoney() { return money; }
 };

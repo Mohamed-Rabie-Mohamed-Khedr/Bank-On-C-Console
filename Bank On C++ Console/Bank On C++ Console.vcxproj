@@ -131,8 +131,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="client.h" />
+    <ClInclude Include="currentUser.h" />
+    <ClInclude Include="financialTransactionsMenu.h" />
+    <ClInclude Include="loginMenu.h" />
+    <ClInclude Include="mainMenu.h" />
     <ClInclude Include="myTools.h" />
     <ClInclude Include="user.h" />
+    <ClInclude Include="usersControlMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

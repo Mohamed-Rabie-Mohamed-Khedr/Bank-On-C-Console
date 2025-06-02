@@ -9,8 +9,7 @@ void printMenuName(std::string name)
 }
 void withdraw(int amount)
 {
-	client p;
-	bool isWithdrawed = p.withdraw(currentClient.getId(), amount);
+	bool isWithdrawed = client::withdraw(currentClient.getId(), amount);
 	if (isWithdrawed)
 	{
 		currentClient.setMoney(currentClient.getMoney() - amount);
@@ -23,10 +22,9 @@ void withdraw()
 {
 	system("cls");
 	printMenuName("Withdraw Money");
-	client p;
 	int amount;
 	readNumber(amount, "Enter amount: ");
-	bool isWithdrawed = p.withdraw(currentClient.getId(), amount);
+	bool isWithdrawed = client::withdraw(currentClient.getId(), amount);
 	if (isWithdrawed)
 	{
 		currentClient.setMoney(currentClient.getMoney() - amount);
@@ -39,10 +37,9 @@ void deposit()
 {
 	system("cls");
 	printMenuName("Deposit Money");
-	client p;
 	int amount;
 	readNumber(amount, "Enter amount: ");
-	bool isDeposited = p.deposit(currentClient.getId(), amount);
+	bool isDeposited = client::deposit(currentClient.getId(), amount);
 	if (isDeposited)
 	{
 		currentClient.setMoney(currentClient.getMoney() + amount);
@@ -60,7 +57,7 @@ void showBalance()
 }
 void quickWithdrawMenu()
 {
-	char choice = '0';
+	short choice = 0;
 	system("cls");
 	printMenuName("Quick Withdraw");
 	std::cout << "1 100\n";
@@ -76,20 +73,20 @@ void quickWithdrawMenu()
 	std::cin >> choice;
 	switch (choice)
 	{
-	case '1':withdraw(100); break;
-	case '2':withdraw(500); break;
-	case '3':withdraw(1000); break;
-	case '4':withdraw(2000); break;
-	case '5':withdraw(5000); break;
-	case '6':withdraw(10000); break;
-	case '7':withdraw(20000); break;
-	case '8':withdraw(50000); break;
-	case '9':withdraw(100000); break;
+	case 1:withdraw(100); break;
+	case 2:withdraw(500); break;
+	case 3:withdraw(1000); break;
+	case 4:withdraw(2000); break;
+	case 5:withdraw(5000); break;
+	case 6:withdraw(10000); break;
+	case 7:withdraw(20000); break;
+	case 8:withdraw(50000); break;
+	case 9:withdraw(100000); break;
 	}
 }
 void mainMenu()
 {
-	char choice = '0';
+	short choice = 0;
 	do
 	{
 		system("cls");
@@ -103,10 +100,10 @@ void mainMenu()
 		std::cin >> choice;
 		switch (choice)
 		{
-		case '1':quickWithdrawMenu(); break;
-		case '2':withdraw(); break;
-		case '3':deposit(); break;
-		case '4':showBalance(); break;
+		case 1:quickWithdrawMenu(); break;
+		case 2:withdraw(); break;
+		case 3:deposit(); break;
+		case 4:showBalance(); break;
 		}
 	} while (choice != '5');
 }
@@ -125,8 +122,7 @@ void loginMenu()
 
 	do
 	{
-		client p;
-		std::vector<client> all = p.getClientsFromFile();
+		std::vector<client> all = client::getClientsFromFile();
 		system("cls");
 		printMenuName("Login");
 		std::cout << "Enter Your Name: ";

@@ -14,3 +14,21 @@ void readNumber(T& num, std::string message)
 		std::cin >> num;
 	}
 }
+std::string encrypt(std::string word, short key = 5)
+{
+	std::string wordCrypt = "";
+	for (int i = 0; i < word.length(); ++i)
+	{
+		wordCrypt += word[i] - key;
+	}
+	return wordCrypt;
+}
+std::string decrypt(std::string word, short key = 5)
+{
+	std::string wordDecrypt = "";
+	for (int i = 0; i < word.length(); ++i)
+	{
+		wordDecrypt += word[i] + key;
+	}
+	return wordDecrypt;
+}

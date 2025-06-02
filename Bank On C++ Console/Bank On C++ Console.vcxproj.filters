@@ -29,5 +29,20 @@
     <ClInclude Include="user.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="currentUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="financialTransactionsMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usersControlMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loginMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,12 +1,11 @@
 #pragma once
-#include <iostream>
-#include <string>
 #include <fstream>
 #include <vector>
+#include "myTools.h"
 struct user
 {
 	std::string name, password;
-	char addClient, showAllClients, findClient, deleteClient, updateClient, financialTransactions, usersControl;
+	char addClient, showAllClients, findClient, deleteClient, updateClient, financialTransactions, usersControl, showUsersRegister;
 
 	bool readData()
 	{
@@ -48,11 +47,15 @@ struct user
 
 		std::cout << "Allow users control? (y/n): "; std::cin >> choice;
 		usersControl = (choice == 'y' || choice == 'Y') ? 'y' : 'n';
+
+		std::cout << "Allow showing users register? (y/n): "; std::cin >> choice;
+		showUsersRegister = (choice == 'y' || choice == 'Y') ? 'y' : 'n';
 	}
 	std::string getInfo()
 	{
-		return name + ",/," + password + ",/," + addClient + showAllClients + findClient
-		+ deleteClient + updateClient + financialTransactions + usersControl;
+		return encrypt(name + ",/," + password + ",/," + addClient + showAllClients + findClient
+		+ deleteClient + updateClient + financialTransactions + usersControl
+		+ showUsersRegister);
 	}
 	static bool addUser()
 	{
@@ -69,7 +72,8 @@ struct user
 			"\nAllow addition Client " + addClient + "\nAllow showing all Clients " + showAllClients +
 			"\nAllow finding Client " + findClient + "\nAllow deleting Client " + deleteClient +
 			"\nAllow updating Client " + updateClient + "\nAllow financial transactions " +
-			financialTransactions + "\nAllow users control " + usersControl;
+			financialTransactions + "\nAllow users control " + usersControl
+			+ "\nAllow showing users register " + showUsersRegister;
 	}
 	static std::vector<user> getUsersFromFile()
 	{
@@ -79,6 +83,7 @@ struct user
 		size_t pos = 0;
 		while (getline(file, line))
 		{
+			line = decrypt(line);
 			user u;
 			pos = line.find(",/,");
 			u.name = line.substr(0, pos);
@@ -92,7 +97,8 @@ struct user
 			u.deleteClient = line[pos++];
 			u.updateClient = line[pos++];
 			u.financialTransactions = line[pos++];
-			u.usersControl = line[pos];
+			u.usersControl = line[pos++];
+			u.showUsersRegister = line[pos];
 			all.push_back(u);
 		}
 		file.close();

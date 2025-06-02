@@ -1,0 +1,17 @@
+﻿  ATM.cpp
+D:\Mohamed\Projects\C++\Bank On C++ Console\ATM\myTools.h(20,20): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'ATM.cpp')
+  
+D:\Mohamed\Projects\C++\Bank On C++ Console\ATM\myTools.h(29,20): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'ATM.cpp')
+  
+D:\Mohamed\Projects\C++\Bank On C++ Console\ATM\client.h(63,40): warning C4018: '>=': signed/unsigned mismatch
+  (compiling source file 'ATM.cpp')
+  
+D:\Mohamed\Projects\C++\Bank On C++ Console\ATM\ATM.cpp(132,21): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  3 of 308 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    15 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ATM.vcxproj -> D:\Mohamed\Projects\C++\Bank On C++ Console\Release\ATM.exe
