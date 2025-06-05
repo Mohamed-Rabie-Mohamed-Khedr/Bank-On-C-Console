@@ -15,8 +15,7 @@ private:
 	{
 		std::fstream file("clients.txt", std::ios::in);
 		std::string line;
-		std::cout << "Enter id Client: ";
-		std::cin >> id;
+		readString(id, "Enter Client ID: ");
 		while (getline(file, line))
 		{
 			if (line.substr(0, line.find(",/,")) == id)
@@ -26,14 +25,11 @@ private:
 		}
 		file.close();
 
-		std::cout << "Enter Client name: ";
-		std::getline(std::cin >> std::ws, name);
+		readString(name, "Enter Client name: ");
 		readNumber(age, "Enter Client age: ");
 		readNumber(money, "Enter Client money: ");
-		std::cout << "Enter Client phone: ";
-		std::cin >> phone;
-
-	return true;
+		readString(phone, "Enter Client phone: ");
+		return true;
 	}
 public:
 	client()

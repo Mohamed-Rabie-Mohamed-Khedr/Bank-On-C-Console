@@ -11,10 +11,8 @@ struct user
 	{
 		std::fstream file("users.txt", std::ios::oct | std::ios::app);
 		std::string line;
-		std::cout << "Enter user name: ";
-		std::getline(std::cin >> std::ws, name);
-		std::cout << "Enter user password: ";
-		std::getline(std::cin >> std::ws, password);
+		readNumber(name, "Enter user name: ");
+		readNumber(password, "Enter password: ");
 		size_t pos = 0;
 		while (getline(file, line))
 		{

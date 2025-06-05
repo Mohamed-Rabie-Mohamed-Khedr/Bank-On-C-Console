@@ -146,8 +146,7 @@ void financialTransactionsMenu()
 			std::cout << "3.Transfer\n";
 			std::cout << "4.Show Transfer Register\n";
 			std::cout << "5.back to main menu\n";
-			std::cout << "\nEnter Your Choice: ";
-			std::cin >> choice;
+			readNumber(choice, "Enter your choice: ");
 			switch (choice)
 			{
 			case 1:

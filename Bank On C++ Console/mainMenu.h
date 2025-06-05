@@ -158,10 +158,10 @@ void mainMenu()
 		std::cout << "6.Financial Transactions\n";
 		std::cout << "7.Users Control\n";
 		std::cout << "8.Show Users Register\n";
-		std::cout << "9.Back To Login\n";
+		std::cout << "9.Currenies Exchange\n";
+		std::cout << "10.Back To Login\n";
 		std::cout << "........................\n";
-		std::cout << "\nEnter Your Choice: ";
-		std::cin >> choice;
+		readNumber(choice, "Enter Your Choice: ");
 		switch (choice)
 		{
 		case 1:
@@ -188,6 +188,9 @@ void mainMenu()
 		case 8:
 			showUsersRegister();
 			break;
+		case 9:
+			currencyMenu();
+			break;
 		}
-	} while (choice != 9);
+	} while (choice != 10);
 }

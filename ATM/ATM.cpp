@@ -69,8 +69,7 @@ void quickWithdrawMenu()
 	std::cout << "7 20000\n";
 	std::cout << "8 50000\n";
 	std::cout << "9 100000\n";
-	std::cout << "\nEnter Your Choice: ";
-	std::cin >> choice;
+	readNumber(choice, "Enter Your Choice: ");
 	switch (choice)
 	{
 	case 1:withdraw(100); break;
@@ -96,8 +95,7 @@ void mainMenu()
 		std::cout << "3 deposit\n";
 		std::cout << "4 balance\n";
 		std::cout << "5 back to login\n";
-		std::cout << "Enter Your Choice: ";
-		std::cin >> choice;
+		readNumber(choice, "Enter Your Choice: ");
 		switch (choice)
 		{
 		case 1:quickWithdrawMenu(); break;
@@ -125,10 +123,8 @@ void loginMenu()
 		std::vector<client> all = client::getClientsFromFile();
 		system("cls");
 		printMenuName("Login");
-		std::cout << "Enter Your Name: ";
-		std::cin >> name;
-		std::cout << "Enter Your ID: ";
-		std::cin >> id;
+		readNumber(name, "Enter Your Name: ");
+		readNumber(id, "Enter Your ID: ");
 		for (int i = 0; i < all.size(); i++)
 		{
 			if (all[i].getName() == name && all[i].getId() == id)

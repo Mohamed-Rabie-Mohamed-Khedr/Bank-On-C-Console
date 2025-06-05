@@ -131,6 +131,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="client.h" />
+    <ClInclude Include="currency.h" />
+    <ClInclude Include="currencyMenu.h" />
     <ClInclude Include="currentUser.h" />
     <ClInclude Include="financialTransactionsMenu.h" />
     <ClInclude Include="loginMenu.h" />

@@ -1,5 +1,5 @@
 #pragma once
-#include "currentUser.h"
+#include "currencyMenu.h"
 #include "client.h"
 void addUser()
 {
@@ -88,8 +88,7 @@ void usersControlMenu()
 			std::cout << "4.Delete User\n";
 			std::cout << "5.Update User\n";
 			std::cout << "6.back to main menu\n";
-			std::cout << "\nEnter Your Choice: ";
-			std::cin >> choice;
+			readNumber(choice, "Enter Your Choice: ");
 			switch (choice)
 			{
 			case 1:

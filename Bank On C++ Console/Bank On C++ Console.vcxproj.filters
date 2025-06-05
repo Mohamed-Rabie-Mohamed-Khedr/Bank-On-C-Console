@@ -44,5 +44,11 @@
     <ClInclude Include="loginMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="currency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="currencyMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

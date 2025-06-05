@@ -55,3 +55,11 @@ std::string decrypt(std::string word, short key = 5)
 	}
 	return wordDecrypt;
 }
+std::string stringToLower(std::string str)
+{
+	for (int i = 0; i < str.length(); ++i)
+	{
+		str[i] = tolower(str[i]);
+	}
+	return str;
+}
